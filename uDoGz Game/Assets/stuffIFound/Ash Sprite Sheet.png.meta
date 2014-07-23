@@ -140,8 +140,8 @@ TextureImporter:
         y: 187
         width: 19
         height: 25
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .374000013}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Ash Sprite Sheet_19
       rect:
@@ -779,9 +779,9 @@ TextureImporter:
         x: 470
         y: 129
         width: 19
-        height: 24
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        height: 23
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ashRightIdle
       rect:
@@ -799,7 +799,7 @@ TextureImporter:
         x: 530
         y: 129
         width: 16
-        height: 24
+        height: 23
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

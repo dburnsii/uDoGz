@@ -66,7 +66,7 @@ public class brockScript : MonoBehaviour {
 		spriteRenderer.sprite = sprites [index];
 	}
 
-	void OnCollisionEnter(Collider coll)
+	void OnCollisionEnter(Collision coll)
 	{
 
 		}
