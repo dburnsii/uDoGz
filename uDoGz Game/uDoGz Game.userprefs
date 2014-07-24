@@ -1,10 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\BuildingScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Sample Assets\2D\Scripts\Camera2DFollow.cs">
     <Files>
+      <File FileName="uDoGz Game.sln" Line="1" Column="1" />
+      <File FileName="Assets\Sample Assets\2D\Scripts\Camera2DFollow.cs" Line="18" Column="12" />
       <File FileName="Assets\Sample Assets\2D\Scripts\Camera2DFollow.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\playerMovementScript.cs" Line="249" Column="3" />
-      <File FileName="Assets\scripts\BuildingScript.cs" Line="16" Column="34" />
+      <File FileName="Assets\scripts\playerMovementScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\BuildingScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

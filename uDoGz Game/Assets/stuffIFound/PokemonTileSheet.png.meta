@@ -274,7 +274,7 @@ TextureImporter:
     21300538: greedRoofHouseF
     21300540: greenRoofHouseB
     21300542: PokemonTileSheet_298
-    21300544: PokemonTileSheet_299
+    21300544: darkGreenTreeB
     21300546: PokemonTileSheet_300
     21300548: PokemonTileSheet_301
     21300550: PokemonTileSheet_302
@@ -292,7 +292,7 @@ TextureImporter:
     21300574: PokemonTileSheet_314
     21300576: PokemonTileSheet_315
     21300578: PokemonTileSheet_316
-    21300580: PokemonTileSheet_317
+    21300580: darkGreenTreeF
     21300582: PokemonTileSheet_318
     21300584: bigPokemonCenterF
     21300586: PokemonTileSheet_320
@@ -301,6 +301,8 @@ TextureImporter:
     21300592: PokemonTileSheet_294
     21300594: PokemonTileSheet_296
     21300596: PokemonTileSheet_297
+    21300598: PokemonTileSheet_299
+    21300600: PokemonTileSheet_298
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -3232,13 +3234,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PokemonTileSheet_317
+    - name: darkGreenTreeF
       rect:
         serializedVersion: 2
-        x: 175
+        x: 176
         y: 672
-        width: 33
-        height: 44
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3319,6 +3321,26 @@ TextureImporter:
         y: 384
         width: 64
         height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PokemonTileSheet_298
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 441
+        width: 244
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: darkGreenTreeB
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 704
+        width: 32
+        height: 12
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
