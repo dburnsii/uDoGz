@@ -51,6 +51,7 @@
      <Compile Include="Assets\Sample Assets\2D\Scripts\Platformer2DUserControl.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\PlatformerCharacter2D.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\Restarter.cs" />
+     <Compile Include="Assets\scripts\BuildingScript.cs" />
      <Compile Include="Assets\scripts\brockScript.cs" />
      <Compile Include="Assets\scripts\playerMovementScript.cs" />
   </ItemGroup>

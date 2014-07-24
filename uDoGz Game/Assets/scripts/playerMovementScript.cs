@@ -26,6 +26,8 @@ public class playerMovementScript : MonoBehaviour
 	public float lastMoveTime;
 	private int eyesClosed;
 	public float eyesClosedTime;
+	public bool stopStatus;
+	public char collisionDirection;
 
 	// Use this for initialization
 	void Start ()
@@ -41,11 +43,18 @@ public class playerMovementScript : MonoBehaviour
 		rbool = false;
 		eyesClosed = 0;
 		eyesClosedTime = 0;
+		stopStatus = false;
 	}
 
 	// Update is called once per frame
 	void Update ()
 	{
+		if (stopStatus) 
+		{
+			stopStatus = false;
+			collisionDirection = 'n';
+			return;
+		}
 		sysTime = Time.time;
 		if (done) {
 			time = Time.time;
@@ -130,6 +139,10 @@ public class playerMovementScript : MonoBehaviour
 
 	void moveUp ()
 	{
+		if (collisionDirection == 'u') 
+		{
+			return;
+		}
 		dest.Set (0, 1, 0);
 		target = start + dest;
 		if (moveTime >= 1) {
@@ -149,6 +162,10 @@ public class playerMovementScript : MonoBehaviour
 
 	void moveDown ()
 	{
+		if (collisionDirection == 'd') 
+		{
+			return;
+		}
 		dest.Set (0, -1, 0);
 		target = start + dest;
 		if (moveTime >= 1) {
@@ -168,6 +185,10 @@ public class playerMovementScript : MonoBehaviour
 
 	void moveLeft ()
 	{
+		if (collisionDirection == 'l') 
+		{
+			return;
+		}
 		dest.Set (-1, 0, 0);
 		target = start + dest;
 		if (moveTime >= 1) {
@@ -187,6 +208,10 @@ public class playerMovementScript : MonoBehaviour
 
 	void moveRight ()
 	{
+		if (collisionDirection == 'r') 
+		{
+			return;
+		}
 		dest.Set (1, 0, 0);
 		target = start + dest;
 		if (moveTime >= 1) {
@@ -230,22 +255,149 @@ public class playerMovementScript : MonoBehaviour
 		}
 	}
 
-	void OnCollisionEnter2D (Collision2D coll)
+	void OnTriggerEnter2D (Collider2D coll)
 	{
 		if (coll.gameObject.tag == "Building") {
-			Debug.Log ("Hit a building");
-			speed = 0;
+			//Debug.Log ("Hit a building " + Time.time);
+			stopChar();
+			stopStatus = true;
 		}
-		Debug.Log (coll.gameObject.tag + " - tag");
+		//Debug.Log (coll.gameObject.tag + " - tag");
 	}
 
-	void OnCollisionExit2D (Collision2D coll)
+	void stopChar()
 	{
-		//if ( coll.gameObject.tag == "Building" )
-		//{
-		//	Debug.Log ( "Hit a building" );
-		//	speed = 0.075f;
-		//}
-		//Debug.Log ( coll.gameObject.tag + " - tag" );
+		Debug.Log ("Collision detected, running stopChar function with direction '" + dir + "'.");
+		collisionDirection = dir;
+		
+		if (dir == 'u')
+		{
+			transform.position = start;
+			done = true;
+			Debug.Log ("Returning to position " + start.ToString());
+			return;
+		}
+		if (dir == 'd') 
+		{
+			transform.position = start;
+			done = true;
+			Debug.Log ("Returning to position " + start.ToString());
+			return;
+		}
+		if (dir == 'l') 
+		{
+			transform.position = start;
+			done = true;
+			Debug.Log ("Returning to position " + start.ToString());
+			return;
+		}
+		if (dir == 'r') 
+		{
+			transform.position = start;
+			done = true;
+			Debug.Log ("Returning to position " + start.ToString());
+			return;
+		}
+		
+		/*
+		collisionDirection = dir;
+		sysTime = Time.time;
+		if (done) 
+		{
+			time = Time.time;
+			idleTime = sysTime - lastMoveTime;
+			if (Input.GetKey (KeyCode.DownArrow) && collisionDirection != 'd') 
+			{
+				moveDown ();
+				last = KeyCode.DownArrow;
+				stopStatus = false;
+				collisionDirection = 'n';
+				return;
+			} 
+			else if (Input.GetKey (KeyCode.LeftArrow) && collisionDirection != 'l') 
+			{
+				moveLeft ();
+				last = KeyCode.LeftArrow;
+				stopStatus = false;
+				collisionDirection = 'n';
+				return;
+			} 
+			else if (Input.GetKey (KeyCode.RightArrow) && collisionDirection != 'r') 
+			{
+				moveRight ();
+				last = KeyCode.RightArrow;
+				Debug.Log ("Collision detected with direction " + collisionDirection);
+				stopStatus = false;
+				collisionDirection = 'n';
+				return;
+			} 
+			else if (Input.GetKey (KeyCode.UpArrow) && collisionDirection != 'u') 
+			{
+				moveUp ();
+				last = KeyCode.UpArrow;
+				stopStatus = false;
+				collisionDirection = 'n';
+				return;
+			} 
+			else 
+			{
+				if (idleTime < 1) 
+				{
+					if (dir == 'u')
+					{
+						spriteRenderer.sprite = sprites [0];
+						return;
+					}
+					if (dir == 'd') 
+					{
+						spriteRenderer.sprite = sprites [4];
+						return;
+					}
+					if (dir == 'l') 
+					{
+						spriteRenderer.sprite = sprites [8];
+						return;
+					}
+					if (dir == 'r') 
+					{
+						spriteRenderer.sprite = sprites [12];
+						return;
+					}
+				}
+				if (idleTime > 2) 
+				{
+					blinkAnimation ();
+				}
+			}
+		} 
+		else 
+		{
+			transform.position = start;
+			target = start;
+
+			if (dir == 'u') 
+			{
+				transform.position = start;
+				target = start;
+			}
+			if (dir == 'd') 
+			{
+				transform.position = start;
+				target = start;
+			}
+			if (dir == 'l') 
+			{
+				transform.position = start;
+				target = start;
+			}
+			if (dir == 'r') 
+			{
+				transform.position = start;
+				target = start;
+			}
+
+			lastMoveTime = Time.time;
+		}
+	*/
 	}
 }

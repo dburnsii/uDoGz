@@ -271,8 +271,8 @@ TextureImporter:
     21300532: PokemonTileSheet_293
     21300534: PokemonTileSheet_294
     21300536: bigPokemonCenterB
-    21300538: PokemonTileSheet_296
-    21300540: PokemonTileSheet_297
+    21300538: greedRoofHouseF
+    21300540: greenRoofHouseB
     21300542: PokemonTileSheet_298
     21300544: PokemonTileSheet_299
     21300546: PokemonTileSheet_300
@@ -299,6 +299,8 @@ TextureImporter:
     21300588: PokemonTileSheet_321
     21300590: PokemonTileSheet_295
     21300592: PokemonTileSheet_294
+    21300594: PokemonTileSheet_296
+    21300596: PokemonTileSheet_297
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -3297,6 +3299,26 @@ TextureImporter:
         y: 736
         width: 80
         height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greedRoofHouseF
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 352
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenRoofHouseB
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 384
+        width: 64
+        height: 16
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
