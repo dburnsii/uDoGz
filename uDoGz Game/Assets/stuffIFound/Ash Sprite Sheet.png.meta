@@ -1,0 +1,807 @@
+fileFormatVersion: 2
+guid: a50a99d2c4aa81f4e95ec2014baf70d8
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Ash Sprite Sheet
+    21300002: Ash Sprite Sheet_16
+    21300004: Ash Sprite Sheet_17
+    21300006: Ash Sprite Sheet_18
+    21300008: Ash Sprite Sheet_19
+    21300010: Ash Sprite Sheet_20
+    21300012: Ash Sprite Sheet_21
+    21300014: Ash Sprite Sheet_22
+    21300016: Ash Sprite Sheet_23
+    21300018: Ash Sprite Sheet_24
+    21300020: Ash Sprite Sheet_25
+    21300022: Ash Sprite Sheet_26
+    21300024: Ash Sprite Sheet_27
+    21300026: Ash Sprite Sheet_28
+    21300028: Ash Sprite Sheet_29
+    21300030: Ash Sprite Sheet_30
+    21300032: Ash Sprite Sheet_31
+    21300034: Ash Sprite Sheet_32
+    21300036: Ash Sprite Sheet_33
+    21300038: Ash Sprite Sheet_40
+    21300040: Ash Sprite Sheet_41
+    21300042: Ash Sprite Sheet_42
+    21300044: Ash Sprite Sheet_43
+    21300046: Ash Sprite Sheet_44
+    21300048: Ash Sprite Sheet_45
+    21300050: Ash Sprite Sheet_46
+    21300052: Ash Sprite Sheet_47
+    21300054: Ash Sprite Sheet_48
+    21300056: Ash Sprite Sheet_49
+    21300058: Ash Sprite Sheet_50
+    21300060: Ash Sprite Sheet_51
+    21300062: Ash Sprite Sheet_60
+    21300064: Ash Sprite Sheet_61
+    21300066: Ash Sprite Sheet_62
+    21300068: Ash Sprite Sheet_63
+    21300070: Ash Sprite Sheet_64
+    21300072: Ash Sprite Sheet_65
+    21300074: ashDownIdle
+    21300076: ashRightIdle
+    21300078: ashLeftIdle
+    21300080: Ash Sprite Sheet_69
+    21300082: Ash Sprite Sheet_70
+    21300084: Ash Sprite Sheet_71
+    21300086: Ash Sprite Sheet_72
+    21300088: Ash Sprite Sheet_73
+    21300090: Ash Sprite Sheet_74
+    21300092: Ash Sprite Sheet_75
+    21300094: Ash Sprite Sheet_76
+    21300096: Ash Sprite Sheet_77
+    21300098: Ash Sprite Sheet_78
+    21300100: Ash Sprite Sheet_79
+    21300102: Ash Sprite Sheet_80
+    21300104: Ash Sprite Sheet_81
+    21300106: Ash Sprite Sheet_82
+    21300108: Ash Sprite Sheet_83
+    21300110: Ash Sprite Sheet_84
+    21300112: Ash Sprite Sheet_85
+    21300114: Ash Sprite Sheet_86
+    21300116: Ash Sprite Sheet_87
+    21300118: Ash Sprite Sheet_88
+    21300120: Ash Sprite Sheet_89
+    21300122: Ash Sprite Sheet_90
+    21300124: Ash Sprite Sheet_91
+    21300126: Ash Sprite Sheet_92
+    21300128: Ash Sprite Sheet_93
+    21300130: Ash Sprite Sheet_94
+    21300132: Ash Sprite Sheet_95
+    21300134: Ash Sprite Sheet_66
+    21300136: Ash Sprite Sheet_67
+    21300138: Ash Sprite Sheet_68
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 16
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Ash Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 188
+        width: 19
+        height: 23
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 187
+        width: 19
+        height: 25
+      alignment: 9
+      pivot: {x: .5, y: .374000013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 187
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 188
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 189
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 188
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 188
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 187
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 187
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 188
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 188
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 189
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 188
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 188
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 188
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 188
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 188
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 188
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 124
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 121
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 121
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 122
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 122
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 122
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 124
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 122
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 122
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 122
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 122
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 122
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 55
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 55
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 55
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 55
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 55
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 55
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 55
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 55
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 55
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 55
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 56
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 56
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 55
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 55
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 56
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 56
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 56
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 56
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 20
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 20
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 20
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 20
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 20
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 20
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 20
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 20
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 20
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 20
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 21
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 21
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 21
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 21
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 21
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 21
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 21
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ash Sprite Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 21
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ashDownIdle
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 129
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ashRightIdle
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 128
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ashLeftIdle
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 129
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
