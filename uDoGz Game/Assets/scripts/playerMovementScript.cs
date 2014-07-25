@@ -28,6 +28,22 @@ public class playerMovementScript : MonoBehaviour
 	public float eyesClosedTime;
 	public bool stopStatus;
 	public char collisionDirection;
+	private BoxCollider2D playerCollider;
+	public bool uObstacle;
+	public bool dObstacle;
+	public bool lObstacle;
+	public bool rObstacle;
+	public upPlayerColliderBox upCollBox;
+	public downPlayerColliderBox downCollBox;
+	public leftPlayerColliderBox leftCollBox;
+	public rightPlayerColliderBox rightCollBox;
+
+	public bool upBoxBool;
+	public bool upDoorBool;
+	public bool downBoxBool;
+	public bool leftBoxBool;
+	public bool rightBoxBool;
+	//public leftPlayerColliderBox leftBox;
 
 	// Use this for initialization
 	void Start ()
@@ -44,11 +60,25 @@ public class playerMovementScript : MonoBehaviour
 		eyesClosed = 0;
 		eyesClosedTime = 0;
 		stopStatus = false;
+		playerCollider = new BoxCollider2D();
+		upCollBox = (upPlayerColliderBox) FindObjectOfType (typeof(upPlayerColliderBox));
+		downCollBox = (downPlayerColliderBox) FindObjectOfType (typeof(downPlayerColliderBox));
+		leftCollBox = (leftPlayerColliderBox) FindObjectOfType (typeof(leftPlayerColliderBox));
+		rightCollBox = (rightPlayerColliderBox) FindObjectOfType (typeof(rightPlayerColliderBox));
+
+		//leftBoxBool = (bool)GameObject.Find ("leftPlayerCollBox").GetComponent ("collision");
+		//leftBox = (leftPlayerColliderBox) GameObject.Find ("leftPlayerCollBox").GetComponent<leftPlayerColliderBox>();
 	}
 
 	// Update is called once per frame
 	void Update ()
 	{
+		upBoxBool = upCollBox.collision;
+		upDoorBool = upCollBox.door;
+		downBoxBool = downCollBox.collision;
+		leftBoxBool = leftCollBox.collision;
+		rightBoxBool = rightCollBox.collision;
+
 		if (stopStatus) 
 		{
 			stopStatus = false;
@@ -60,39 +90,52 @@ public class playerMovementScript : MonoBehaviour
 			time = Time.time;
 			idleTime = sysTime - lastMoveTime;
 			if (Input.GetKey (last)) {
-				if (dir == 'u') {
+				if(dir == 'u' && upDoorBool)
+				{
+					//enterBuilding();
+				}
+				if (dir == 'u' && !upBoxBool) {
 					moveUp ();
 					return;
 				}
-				if (dir == 'd') {
+				if (dir == 'd' && !downBoxBool) {
 					moveDown ();
 					return;
 				}
-				if (dir == 'l') {
+				if (dir == 'l' && !leftBoxBool) {
+					//Vector3 temp = new Vector3(-0.1f, 0, 0);
+					//transform.position = temp + start;
+					//playerCollider.center.x = 2;
 					moveLeft ();
+					//playerCollider.center.x = 0;
 					return;
 				}
-				if (dir == 'r') {
+				if (dir == 'r' && !rightBoxBool) {
 					moveRight ();
 					return;
 				}
 			} else
-			if (Input.GetKey (KeyCode.DownArrow)) {
+			if (Input.GetKey (KeyCode.DownArrow) && !downBoxBool) {
 				moveDown ();
 				last = KeyCode.DownArrow;
 				return;
 			} else
-			if (Input.GetKey (KeyCode.LeftArrow)) {
+			if (Input.GetKey (KeyCode.LeftArrow) && !leftBoxBool) {
+				Vector3 temp = new Vector3(-0.1f, 0, 0);
+				transform.position = temp + start;
+				//playerCollider.center.x = 2;
 				moveLeft ();
 				last = KeyCode.LeftArrow;
+				//playerCollider.center.x = 0;
+				collisionDirection = 'n';
 				return;
 			} else
-			if (Input.GetKey (KeyCode.RightArrow)) {
+			if (Input.GetKey (KeyCode.RightArrow) && !rightBoxBool) {
 				moveRight ();
 				last = KeyCode.RightArrow;
 				return;
 			} else
-			if (Input.GetKey (KeyCode.UpArrow)) {
+			if (Input.GetKey (KeyCode.UpArrow) && !upBoxBool) {
 				moveUp ();
 				last = KeyCode.UpArrow;
 				return;
@@ -139,7 +182,7 @@ public class playerMovementScript : MonoBehaviour
 
 	void moveUp ()
 	{
-		if (collisionDirection == 'u') 
+		if (collisionDirection == 'u' || uObstacle) 
 		{
 			return;
 		}
@@ -149,6 +192,9 @@ public class playerMovementScript : MonoBehaviour
 			moveTime = 0;
 			done = true;
 			start = transform.position;
+			dObstacle = false;
+			lObstacle = false;
+			rObstacle = false;
 		} else {
 			int index = (int)(Time.timeSinceLevelLoad * FPS);
 			index = index % (sprites.Length - 16);
@@ -158,11 +204,12 @@ public class playerMovementScript : MonoBehaviour
 			dir = 'u';
 			done = false;
 		}
+
 	}
 
 	void moveDown ()
 	{
-		if (collisionDirection == 'd') 
+		if (collisionDirection == 'd' || dObstacle) 
 		{
 			return;
 		}
@@ -172,6 +219,9 @@ public class playerMovementScript : MonoBehaviour
 			moveTime = 0;
 			done = true;
 			start = transform.position;
+			uObstacle = false;
+			lObstacle = false;
+			rObstacle = false;
 		} else {
 			int index = (int)(Time.timeSinceLevelLoad * FPS);
 			index = index % (sprites.Length - 16);
@@ -185,7 +235,7 @@ public class playerMovementScript : MonoBehaviour
 
 	void moveLeft ()
 	{
-		if (collisionDirection == 'l') 
+		if (collisionDirection == 'l' || lObstacle)// || leftBox.collision) 
 		{
 			return;
 		}
@@ -195,6 +245,9 @@ public class playerMovementScript : MonoBehaviour
 			moveTime = 0;
 			done = true;
 			start = transform.position;
+			dObstacle = false;
+			uObstacle = false;
+			rObstacle = false;
 		} else {
 			int index = (int)(Time.timeSinceLevelLoad * FPS);
 			index = index % (sprites.Length - 16);
@@ -208,7 +261,7 @@ public class playerMovementScript : MonoBehaviour
 
 	void moveRight ()
 	{
-		if (collisionDirection == 'r') 
+		if (collisionDirection == 'r' || rObstacle) 
 		{
 			return;
 		}
@@ -218,6 +271,9 @@ public class playerMovementScript : MonoBehaviour
 			moveTime = 0;
 			done = true;
 			start = transform.position;
+			dObstacle = false;
+			lObstacle = false;
+			uObstacle = false;
 		} else {
 			int index = (int)(Time.timeSinceLevelLoad * FPS);
 			index = index % (sprites.Length - 16);
@@ -273,6 +329,7 @@ public class playerMovementScript : MonoBehaviour
 		if (dir == 'u')
 		{
 			transform.position = start;
+			uObstacle = true;
 			done = true;
 			Debug.Log ("Returning to position " + start.ToString());
 			return;
@@ -280,13 +337,16 @@ public class playerMovementScript : MonoBehaviour
 		if (dir == 'd') 
 		{
 			transform.position = start;
+			dObstacle = true;
 			done = true;
 			Debug.Log ("Returning to position " + start.ToString());
 			return;
 		}
 		if (dir == 'l') 
 		{
+			collisionDirection = 'l';
 			transform.position = start;
+			lObstacle = true;
 			done = true;
 			Debug.Log ("Returning to position " + start.ToString());
 			return;
@@ -294,6 +354,7 @@ public class playerMovementScript : MonoBehaviour
 		if (dir == 'r') 
 		{
 			transform.position = start;
+			rObstacle = true;
 			done = true;
 			Debug.Log ("Returning to position " + start.ToString());
 			return;
