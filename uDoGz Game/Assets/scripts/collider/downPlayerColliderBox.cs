@@ -20,7 +20,7 @@ public class downPlayerColliderBox : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D coll)
 	{
-		if (coll.gameObject.tag == "Building") 
+		if (coll.gameObject.tag == "Building" || coll.gameObject.tag == "Friendly") 
 		{
 			collision = true;
 		}
