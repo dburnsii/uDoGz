@@ -8,8 +8,10 @@ public class upPlayerColliderBox : MonoBehaviour {
 	public string testInt;
 	public bool door;
 	public string building;
+	public bool talk;
 	// Use this for initialization
 	void Start () {
+		talk = false;
 		collision = false;
 		door = false;
 		player = GameObject.Find ("Player");
@@ -27,6 +29,11 @@ public class upPlayerColliderBox : MonoBehaviour {
 		{
 			collision = true;
 		}
+		if (coll.gameObject.tag == "Talkable") 
+		{
+			collision = true;
+			talk = true;
+		}
 		if (coll.gameObject.tag == "Door") 
 		{
 			door = true;
@@ -39,6 +46,7 @@ public class upPlayerColliderBox : MonoBehaviour {
 	{
 		collision = false;
 		door = false;
+		talk = false;
 	}
 
 	public bool getColl()

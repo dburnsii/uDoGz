@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 56629f4980769e54b9aae73c6b674bc7
+guid: ba7fdd28c57d00d4cbee2921af0205ff
 TextureImporter:
   fileIDToRecycleName:
-    21300000: empty16x16
+    21300000: TestHouseInterior
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -23,7 +23,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -2
-  maxTextureSize: 32
+  maxTextureSize: 1024
   textureSettings:
     filterMode: 0
     aniso: 1

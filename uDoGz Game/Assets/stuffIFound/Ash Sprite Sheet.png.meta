@@ -3,18 +3,18 @@ guid: a50a99d2c4aa81f4e95ec2014baf70d8
 TextureImporter:
   fileIDToRecycleName:
     21300000: Ash Sprite Sheet
-    21300002: Ash Sprite Sheet_16
-    21300004: Ash Sprite Sheet_17
-    21300006: Ash Sprite Sheet_18
-    21300008: Ash Sprite Sheet_19
-    21300010: Ash Sprite Sheet_20
-    21300012: Ash Sprite Sheet_21
-    21300014: Ash Sprite Sheet_22
-    21300016: Ash Sprite Sheet_23
-    21300018: Ash Sprite Sheet_24
-    21300020: Ash Sprite Sheet_25
-    21300022: Ash Sprite Sheet_26
-    21300024: Ash Sprite Sheet_27
+    21300002: ashDownN
+    21300004: ashDownR
+    21300006: ashDownL
+    21300008: ashRightN
+    21300010: ashRightR
+    21300012: ashRightL
+    21300014: ashUpN
+    21300016: ashUpR
+    21300018: ashUpL
+    21300020: ashLeftN
+    21300022: ashLeftR
+    21300024: ashLeftL
     21300026: Ash Sprite Sheet_28
     21300028: Ash Sprite Sheet_29
     21300030: Ash Sprite Sheet_30
@@ -113,7 +113,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Ash Sprite Sheet_16
+    - name: ashDownN
       rect:
         serializedVersion: 2
         x: 24
@@ -123,7 +123,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ash Sprite Sheet_17
+    - name: ashDownR
       rect:
         serializedVersion: 2
         x: 59
@@ -133,7 +133,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: .5, y: .374000013}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ash Sprite Sheet_18
+    - name: ashDownL
       rect:
         serializedVersion: 2
         x: 94
@@ -143,95 +143,95 @@ TextureImporter:
       alignment: 9
       pivot: {x: .5, y: .374000013}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ash Sprite Sheet_19
+    - name: ashRightN
       rect:
         serializedVersion: 2
         x: 132
         y: 188
         width: 16
         height: 23
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ash Sprite Sheet_20
+    - name: ashRightR
       rect:
         serializedVersion: 2
         x: 167
         y: 189
         width: 16
         height: 23
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ash Sprite Sheet_21
+    - name: ashRightL
       rect:
         serializedVersion: 2
         x: 202
         y: 188
         width: 16
         height: 24
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ash Sprite Sheet_22
+    - name: ashUpN
       rect:
         serializedVersion: 2
         x: 234
         y: 188
         width: 19
         height: 23
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ash Sprite Sheet_23
+    - name: ashUpR
       rect:
         serializedVersion: 2
         x: 269
         y: 187
         width: 19
         height: 25
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ash Sprite Sheet_24
+    - name: ashUpL
       rect:
         serializedVersion: 2
         x: 304
         y: 187
         width: 19
         height: 25
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ash Sprite Sheet_25
+    - name: ashLeftN
       rect:
         serializedVersion: 2
         x: 340
         y: 188
         width: 16
         height: 23
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ash Sprite Sheet_26
+    - name: ashLeftR
       rect:
         serializedVersion: 2
         x: 375
         y: 188
         width: 16
         height: 24
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ash Sprite Sheet_27
+    - name: ashLeftL
       rect:
         serializedVersion: 2
         x: 410
         y: 189
         width: 16
         height: 23
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Ash Sprite Sheet_28
       rect:
@@ -790,8 +790,8 @@ TextureImporter:
         y: 128
         width: 16
         height: 23
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ashLeftIdle
       rect:
@@ -800,8 +800,8 @@ TextureImporter:
         y: 129
         width: 16
         height: 23
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .349999994}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

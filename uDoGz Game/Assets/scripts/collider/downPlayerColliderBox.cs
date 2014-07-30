@@ -4,10 +4,14 @@ using System.Collections;
 public class downPlayerColliderBox : MonoBehaviour {
 
 	public bool collision;
+	public bool door;
 	private GameObject player;
 	public string testInt;
+	public bool talk;
+	public string building;
 	// Use this for initialization
 	void Start () {
+		talk = false;
 		collision = false;
 		player = GameObject.Find ("Player");
 	}
@@ -24,11 +28,22 @@ public class downPlayerColliderBox : MonoBehaviour {
 		{
 			collision = true;
 		}
+		if (coll.gameObject.tag == "Talkable") 
+		{
+			collision = true;
+			talk = true;
+		}
+		if (coll.gameObject.tag == "Door") 
+		{
+			door = true;
+			building = coll.gameObject.name;
+		}
 		Debug.Log ("Down collision box has detected an obstacle");
 	}
 
 	void OnTriggerExit2D()
 	{
+		talk = false;
 		collision = false;
 	}
 

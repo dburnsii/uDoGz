@@ -1,13 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\movement\brockScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\movement\playerMovementScript.cs">
     <Files>
-      <File FileName="Assets\scripts\BuildingScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\movement\playerMovementScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\movement\brockScript.cs" Line="62" Column="11" />
-      <File FileName="Assets\scripts\collider\upColliderBox.cs" Line="27" Column="20" />
-      <File FileName="Assets\scripts\collider\downColliderBox.cs" Line="13" Column="21" />
-      <File FileName="Assets\scripts\collider\upPlayerColliderBox.cs" Line="26" Column="77" />
+      <File FileName="Assets\scripts\BuildingScript.cs" Line="17" Column="1" />
+      <File FileName="Assets\scripts\movement\playerMovementScript.cs" Line="128" Column="48" />
+      <File FileName="Assets\scripts\movement\brockScript.cs" Line="105" Column="2" />
+      <File FileName="Assets\scripts\collider\upPlayerColliderBox.cs" Line="30" Column="21" />
+      <File FileName="Assets\scripts\collider\rightPlayerColliderBox.cs" Line="12" Column="16" />
+      <File FileName="Assets\scripts\collider\leftPlayerColliderBox.cs" Line="40" Column="16" />
+      <File FileName="Assets\scripts\collider\downPlayerColliderBox.cs" Line="39" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
