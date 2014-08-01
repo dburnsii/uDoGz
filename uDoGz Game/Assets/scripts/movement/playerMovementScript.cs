@@ -18,11 +18,6 @@ public class playerMovementScript : MonoBehaviour
 	private KeyCode last;
 	public float FPS;
 	private float idleTime;
-	//private bool ubool;
-	//private bool dbool;
-	//private bool lbool;
-	//private bool rbool;
-	//private bool coll;
 	private float time;
 	private float sysTime;
 	private float lastMoveTime;
@@ -44,12 +39,14 @@ public class playerMovementScript : MonoBehaviour
 	private bool dObstacle;
 	private bool lObstacle;
 	private bool rObstacle;
+	public bool enabled;
+	private dBoxScript[] dialogBox;
 	//public leftPlayerColliderBox leftBox;
 
-	// Use this for initialization
 	void Start ()
 	{
 		//coll = false;
+		enabled = true;
 		spriteRenderer = renderer as SpriteRenderer;
 		start = transform.position;
 		done = true;
@@ -64,6 +61,7 @@ public class playerMovementScript : MonoBehaviour
 		downCollBox = ( downPlayerColliderBox )FindObjectOfType ( typeof( downPlayerColliderBox ) );
 		leftCollBox = ( leftPlayerColliderBox )FindObjectOfType ( typeof( leftPlayerColliderBox ) );
 		rightCollBox = ( rightPlayerColliderBox )FindObjectOfType ( typeof( rightPlayerColliderBox ) );
+		dialogBox = (dBoxScript[])FindObjectsOfType (typeof(dBoxScript));
 
 		//leftBoxBool = (bool)GameObject.Find ("leftPlayerCollBox").GetComponent ("collision");
 		//leftBox = (leftPlayerColliderBox) GameObject.Find ("leftPlayerCollBox").GetComponent<leftPlayerColliderBox>();
@@ -72,6 +70,16 @@ public class playerMovementScript : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		if ( !enabled ) 
+		{
+			if(Input.GetKey (KeyCode.Space))
+			{
+				Debug.Log ("Escaping");
+
+			}
+			return;
+		}
+		//GUI.Label (new Rect (0, 0, 10, 2), "Test Text");
 		upBoxBool = upCollBox.collision;
 		upDoorBool = upCollBox.door;
 		downBoxBool = downCollBox.collision;
@@ -114,6 +122,18 @@ public class playerMovementScript : MonoBehaviour
 				{
 					moveRight ();
 					return;
+				}
+			}
+			else if( Input.GetKey (KeyCode.Space))
+			{
+				if(dir == 'r' && rightCollBox.talk)
+				{
+					for(int i = 0; i < dialogBox.Length; i++)
+					{
+						dialogBox[i].visible = true;
+						dialogBox[i].subject = rightCollBox.building;
+					}
+					Debug.Log ("Enabling dialog boxes");
 				}
 			}
 			else if ( Input.GetKey ( KeyCode.DownArrow ))
@@ -178,6 +198,13 @@ public class playerMovementScript : MonoBehaviour
 					spriteRenderer.sprite = sprites[0];
 					dir = 'u';
 					done = true;
+				}
+			}
+			else if (Input.GetKey (KeyCode.Space))
+			{
+				if(dir == 'u' && upCollBox.talk)
+				{
+					//dialogScript.;
 				}
 			}
 			else
@@ -403,7 +430,6 @@ public class playerMovementScript : MonoBehaviour
 		}
 		//Debug.Log (coll.gameObject.tag + " - tag");
 	}
-
 
 	void stopChar ()
 	{

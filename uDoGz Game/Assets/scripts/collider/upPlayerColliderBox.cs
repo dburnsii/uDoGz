@@ -29,12 +29,13 @@ public class upPlayerColliderBox : MonoBehaviour {
 		{
 			collision = true;
 		}
-		if (coll.gameObject.tag == "Talkable") 
+		else if (coll.gameObject.tag == "Talkable") 
 		{
 			collision = true;
 			talk = true;
+			building = coll.gameObject.name;
 		}
-		if (coll.gameObject.tag == "Door") 
+		else if (coll.gameObject.tag == "Door") 
 		{
 			door = true;
 			building = coll.gameObject.name;

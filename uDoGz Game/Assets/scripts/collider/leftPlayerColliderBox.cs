@@ -5,7 +5,7 @@ public class leftPlayerColliderBox : MonoBehaviour {
 
 	public bool collision;
 	private GameObject player;
-	public string testInt;
+	public string building;
 	public bool talk;
 	// Use this for initialization
 	void Start () {
@@ -26,10 +26,11 @@ public class leftPlayerColliderBox : MonoBehaviour {
 		{
 			collision = true;
 		}
-		if (coll.gameObject.tag == "Talkable") 
+		else if (coll.gameObject.tag == "Talkable") 
 		{
 			collision = true;
 			talk = true;
+			building = coll.gameObject.name;
 		}
 		Debug.Log ("Left collision box has detected an obstacle");
 	}

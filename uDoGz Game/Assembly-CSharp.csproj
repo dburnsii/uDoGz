@@ -58,8 +58,12 @@
      <Compile Include="Assets\scripts\collider\rightPlayerColliderBox.cs" />
      <Compile Include="Assets\scripts\collider\upColliderBox.cs" />
      <Compile Include="Assets\scripts\collider\upPlayerColliderBox.cs" />
+     <Compile Include="Assets\scripts\dialog\dBoxScript.cs" />
+     <Compile Include="Assets\scripts\dialog\dialogScript.cs" />
      <Compile Include="Assets\scripts\movement\brockScript.cs" />
      <Compile Include="Assets\scripts\movement\playerMovementScript.cs" />
+     <None Include="Assets\scripts\dialog\testHouseBook.txt" />
+     <None Include="Assets\scripts\dialog\testHouseBook.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
