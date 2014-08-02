@@ -44,9 +44,14 @@ public class playerMovementScript : MonoBehaviour
 	private bool updateTime;
 	public float timeSinceUpdate;
 	public bool displayedYet;
+	public CNJoystick joystick;
+	public char activeDirection;
+	private char lastActiveDirection;
+	private bool aButtonActive;
 
 	void Start ()
 	{
+		activeDirection = 'n';
 		enabled = true;
 		updateTime = true;
 		spriteRenderer = renderer as SpriteRenderer;
@@ -83,7 +88,7 @@ public class playerMovementScript : MonoBehaviour
 		{
 			time = Time.time;
 			idleTime = sysTime - lastMoveTime;
-			if ( Input.GetKey ( last ) && enabled )
+			if ( (Input.GetKey ( last ) || lastActiveDirection == activeDirection) && enabled )
 			{
 				if ( dir == 'u' && upDoorBool )
 				{
@@ -110,7 +115,7 @@ public class playerMovementScript : MonoBehaviour
 					return;
 				}
 			}
-			else if( Input.GetKey (KeyCode.Space))
+			else if( Input.GetKey (KeyCode.Space) || aButtonActive)
 			{
 				if(dir == 'u' && upCollBox.talk && Time.time - timeSinceUpdate > 0.5)
 				{
@@ -136,10 +141,12 @@ public class playerMovementScript : MonoBehaviour
 					dialogBox.applyText();
 					timeSinceUpdate = Time.time;
 				}
+				aButtonActive = false;
 			}
-			else if ( Input.GetKey ( KeyCode.DownArrow ) && enabled)
+			else if ( (Input.GetKey ( KeyCode.DownArrow ) || activeDirection == 'd') && enabled)
 			{
 				last = KeyCode.DownArrow;
+				lastActiveDirection = 'd';
 				if(!downBoxBool)
 				{
 					moveDown ();
@@ -152,9 +159,10 @@ public class playerMovementScript : MonoBehaviour
 					done = true;
 				}
 			}
-			else if ( Input.GetKey ( KeyCode.LeftArrow ) && enabled )
+			else if ( (Input.GetKey ( KeyCode.LeftArrow ) || activeDirection == 'l') && enabled )
 			{
 				last = KeyCode.LeftArrow;
+				lastActiveDirection = 'l';
 				if(!leftBoxBool)
 				{
 					moveLeft ();
@@ -167,9 +175,10 @@ public class playerMovementScript : MonoBehaviour
 					done = true;
 				}
 			} 
-			else if ( Input.GetKey ( KeyCode.RightArrow ) && enabled)
+			else if ( (Input.GetKey ( KeyCode.RightArrow ) || activeDirection == 'r') && enabled)
 			{
 				last = KeyCode.RightArrow;
+				lastActiveDirection = 'r';
 				if(!rightBoxBool)
 				{
 					moveRight ();
@@ -182,9 +191,10 @@ public class playerMovementScript : MonoBehaviour
 					done = true;
 				}
 			}
-			else if ( Input.GetKey ( KeyCode.UpArrow ) && enabled )
+			else if ( (Input.GetKey ( KeyCode.UpArrow ) || activeDirection == 'u') && enabled )
 			{
 				last = KeyCode.UpArrow;
+				lastActiveDirection = 'u';
 				if(upDoorBool)
 				{
 					//enterBuilding();
@@ -423,10 +433,10 @@ public class playerMovementScript : MonoBehaviour
 
 	void stopChar ()
 	{
-		Debug.Log ("Collision detected, running stopChar function with direction '" + dir + "'.");
-		collisionDirection = dir;
+				Debug.Log ("Collision detected, running stopChar function with direction '" + dir + "'.");
+				collisionDirection = dir;
 		
-		if (dir == 'u') {
+				if (dir == 'u') {
 						transform.position = start;
 						uObstacle = true;
 						done = true;
@@ -535,4 +545,59 @@ public class playerMovementScript : MonoBehaviour
 				}
 		}
 
+	void OnEnable()
+	{
+		CNJoystick.FingerLiftedEvent += stopHim;
+		CNJoystick.JoystickMovedEvent += lego;
+		aScript.aButtonPressed += aButton;
+	}
+
+	 void lego(Vector3 direction)
+	{
+		//Debug.Log ("Recieved Joystick Event.");
+		Debug.Log (direction.ToString() + " - before scale");
+		//TODO: scale direction so distance is always 1
+		if ((Mathf.Sqrt (Mathf.Pow (direction.x, 2) + Mathf.Pow (direction.y, 2))) < 0.1) 
+		{
+			stopHim ();
+			return;
+		}
+		float scalingFactor = 1 / (Mathf.Sqrt (Mathf.Pow(direction.x, 2) + Mathf.Pow (direction.y, 2)));
+		float sine = Mathf.Sin (1);
+		//Debug.Log (scalingFactor);
+		direction.x = direction.x * scalingFactor;
+		direction.y = direction.y * scalingFactor;
+		//Input axixH = InputGetAxis ("Horizontal");
+		//Debug.Log (direction.ToString() + " - after scale");
+		if (direction.x >= sine) {
+			Debug.Log ("Move right");
+			activeDirection = 'r';
+			//Input.GetAxis("Horizontal") = 1;
+		} else if (direction.x <= -sine) {
+			Debug.Log ("Move Left");
+			activeDirection = 'l';
+		} else if (direction.y >= sine) {
+			Debug.Log ("Move up");
+			activeDirection = 'u';
+		} else if (direction.y <= -sine) {
+			Debug.Log ("Move Down");
+			activeDirection = 'd';
+		} else {
+			activeDirection = 'n';
+		}
+	}
+
+	void stopHim()
+	{
+		activeDirection = 'n';
+		Debug.Log ("Trying to stop him");
+		//Input.GetAxis ("Horizontal") = 0;
+	}
+
+	void aButton()
+	{
+		Debug.Log ("Looks like you just pressed the A button");
+		aButtonActive = true;
+		activeDirection = 'n';
+	}
 }

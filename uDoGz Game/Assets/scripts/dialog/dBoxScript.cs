@@ -23,9 +23,11 @@ public class dBoxScript : MonoBehaviour
 	private GameObject leftSide;
 	private GameObject rightSide;
 	private int numberMessages;
+	private characterLines words;
 
 	void Start ()
 	{
+		words = new characterLines ();
 		visible = false;
 		spriteRenderer = renderer as SpriteRenderer;
 		gameCamera = Camera.main;
@@ -79,37 +81,20 @@ public class dBoxScript : MonoBehaviour
 
 	public void gatherDialog(string subject)
 	{
-		Debug.Log("Getting here 3");
-		string line;
-		string index = "";
 		this.subject = subject;
-		XmlReader xmlReader = XmlReader.Create ("Assets/scripts/dialog/" + subject + ".xml");
-		while (xmlReader.Read ()) 
-		{
-			if(xmlReader.NodeType == XmlNodeType.Element && xmlReader.Name == "location")
-			{
-				if(xmlReader.GetAttribute("index") != null)
-				{
-					index = xmlReader.GetAttribute("index");
-				}
-			}
-			else if(xmlReader.NodeType == XmlNodeType.Element && xmlReader.Name == "message")
-			{
-				if(xmlReader.GetAttribute("index") == index)
-				{
-					text = xmlReader.GetAttribute("text");
-					writeDialog (text);
-				}
-			}
-		}
-		xmlReader.Close ();
+		if (!PlayerPrefs.HasKey (subject))
+						PlayerPrefs.SetInt (subject, 0);
+		Debug.Log(subject);
+		string line;
+		writeDialog (words.getLines( subject, PlayerPrefs.GetInt(subject)));
+		Debug.Log (PlayerPrefs.GetInt (subject));
 		return;
 	}
 
 	public void writeDialog(string input)
 	{
 		Debug.Log("Getting here 2");
-		int maxLineChars = (int)  middleWidth * 10;
+		int maxLineChars = (int)  middleWidth * 8;
 		int minLineChars = 10;
 		string[] words;
 		string result = "";
@@ -176,6 +161,7 @@ public class dBoxScript : MonoBehaviour
 			Debug.Log("Not applying lines. lineIndex = " + lineIndex + " - twoLines.Count = " + twoLines.Count);
 			twoLines.Clear ();
 			lineIndex = 0;
+			Debug.Log ("Subject just before updateIndex: " + subject);
 			updateIndex (subject, 1);
 			return true;
 		}
@@ -183,19 +169,11 @@ public class dBoxScript : MonoBehaviour
 
 	void updateIndex(string subject, int modifier)
 	{
-		XmlDocument doc = new XmlDocument ();
-		subject = "testHouseBook";
-		doc.Load ("Assets/scripts/dialog/" + subject + ".xml");
-		numberMessages = doc.SelectNodes (subject + "/location/location").Count;
-		string temp = doc.SelectSingleNode(subject + "/location/location").Attributes["index"].InnerText;
-		int indexValue = int.Parse (temp);
-		indexValue++;
-		if (indexValue > numberMessages) 
+		int index = PlayerPrefs.GetInt (subject) + 1;
+		if (words.getLines (subject, index) == "Ran out of lines") 
 		{
 			return;
 		}
-		doc.SelectSingleNode (subject + "/location/location").Attributes ["index"].InnerText = indexValue.ToString();
-		doc.Save ("Assets/scripts/dialog/" + subject + ".xml");
-		Debug.Log (indexValue + " - current index value in XML");
+		PlayerPrefs.SetInt (subject, (PlayerPrefs.GetInt (subject) + modifier));
 	}
 }
