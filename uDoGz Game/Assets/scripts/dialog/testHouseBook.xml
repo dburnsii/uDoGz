@@ -1,9 +1,9 @@
 <testHouseBook>
-	<location>
-		<location index="0"/>
-	</location>
-	<message>
-		<message index="0" text="This is your first time opening this book, you illiterate bastard."/>
-		<message index="1" text="This is your second time opening this book, but since your arms are too short to turn the pages you're screwed."/>
-	</message>
+  <location>
+    <location index="1" />
+  </location>
+  <message>
+    <message index="0" text="This is your first time opening this book, you illiterate bastard." />
+    <message index="1" text="You already read this book, but since your arms are too short to turn the pages you're screwed." />
+  </message>
 </testHouseBook>

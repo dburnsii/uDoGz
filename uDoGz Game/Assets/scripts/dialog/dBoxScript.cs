@@ -9,31 +9,32 @@ public class dBoxScript : MonoBehaviour
 	public bool visible;
 	public string text;
 	private GameObject section;
-	private Camera camera;
+	private Camera gameCamera;
 	private playerMovementScript player;
 	public float ratio;
 	private Renderer spriteRenderer;
 	public string name;
-	public int transform;
 	private TextMesh dialog;
-	private float referenceTime;
 	private int index;
-	private bool donePrinting;
 	public string subject;
 	private float middleWidth;
+	public ArrayList twoLines;
+	private int lineIndex;
+	private GameObject leftSide;
+	private GameObject rightSide;
+	private int numberMessages;
 
-	// Use this for initialization
 	void Start ()
 	{
 		visible = false;
 		spriteRenderer = renderer as SpriteRenderer;
-		camera = Camera.main;
-		ratio = camera.aspect;
+		gameCamera = Camera.main;
+		ratio = gameCamera.aspect;
+		middleWidth = (float) ((4*ratio)-0.5);
 		player = ( playerMovementScript )FindObjectOfType ( typeof( playerMovementScript ) );
 		section = GameObject.Find (name);
 		TextMesh[] temp;
 		temp = (TextMesh[])FindObjectsOfType (typeof(TextMesh));
-		referenceTime = 0;
 		for (int i = 0; i < temp.Length; i++) 
 		{
 			if(temp[i].name == "dialog")
@@ -42,54 +43,46 @@ public class dBoxScript : MonoBehaviour
 				break;
 			}
 		}
-
-		//referenceTime = 0;
-		//textMesh = new TextMesh ();
-		//textMesh.transform.position = new Vector3 (0, 0, 0);
-		//textMesh.renderer = new SpriteRenderer();
-		//camera = GameObject.Find ("Camera");
-		//leftSide.transform.position = new Vector3 ((float) (camera.transform.position.x - (0 * ratio)), camera.transform.position.y - 4, 0);
-		//rightSide.transform.position = new Vector3 (camera.transform.position.x + 7, camera.transform.position.y - 4, 0);
-		//middle.transform.position = new Vector3 (camera.transform.position.x , camera.transform.position.y - 4, 0);
-		//player.enabled = false;
+		twoLines = new ArrayList ();
+		leftSide = GameObject.Find ("dBoxLeft");
+		rightSide = GameObject.Find ("dBoxRight");
 	}
-	
-	// Update is called once per frame
+
 	void Update ()
 	{
 
 		if (visible) 
 		{
 			spriteRenderer.enabled = true;
-			ratio = camera.aspect;
-			player.enabled = false;
-			section.transform.position = new Vector2 ( camera.transform.position.x + (4 * ratio * transform), camera.transform.position.y - 4);
-			//rightSide.transform.position = new Vector2 ( camera.transform.position.x + (4 * ratio), camera.transform.position.y - 4);
-			//middle.transform.position = new Vector3 (camera.transform.position.x , camera.transform.position.y - 4, 0);
-			//
-			dialog.transform.position = new Vector3( camera.transform.position.x - (4 * ratio), camera.transform.position.y - 3f, -1);
+			leftSide.renderer.enabled = true;
+			rightSide.renderer.enabled = true;
+			dialog.renderer.enabled = true;
+			ratio = gameCamera.aspect;
+			section.transform.position = new Vector2 ( gameCamera.transform.position.x, gameCamera.transform.position.y - 4);
+			leftSide.transform.position = new Vector2 (gameCamera.transform.position.x - (4 * ratio), gameCamera.transform.position.y - 4);
+			rightSide.transform.position = new Vector2 (gameCamera.transform.position.x + (4 * ratio), gameCamera.transform.position.y - 4);
+			dialog.transform.position = new Vector3( gameCamera.transform.position.x - (4 * ratio), gameCamera.transform.position.y - 3f, -1);
 			middleWidth = (float) ((4*ratio)-0.5);
 			if(name == "dBoxMiddle")
 			{
 				section.transform.localScale = new Vector3( middleWidth, (float) 0.5, 1);
 			}
-			gatherDialog(subject);
 		} 
 		else 
 		{
 			spriteRenderer.enabled = false;
+			leftSide.renderer.enabled = false;
+			rightSide.renderer.enabled = false;
+			dialog.renderer.enabled = false;
 		}
 	}
 
-	void runDialog(string text)
+	public void gatherDialog(string subject)
 	{
-		visible = true;
-	}
-
-	void gatherDialog(string subject)
-	{
+		Debug.Log("Getting here 3");
 		string line;
 		string index = "";
+		this.subject = subject;
 		XmlReader xmlReader = XmlReader.Create ("Assets/scripts/dialog/" + subject + ".xml");
 		while (xmlReader.Read ()) 
 		{
@@ -109,11 +102,13 @@ public class dBoxScript : MonoBehaviour
 				}
 			}
 		}
+		xmlReader.Close ();
 		return;
 	}
 
-	void writeDialog(string input)
+	public void writeDialog(string input)
 	{
+		Debug.Log("Getting here 2");
 		int maxLineChars = (int)  middleWidth * 10;
 		int minLineChars = 10;
 		string[] words;
@@ -121,6 +116,8 @@ public class dBoxScript : MonoBehaviour
 		int charCount = 0;
 		int currentLine = 1;
 		words = input.Split (" " [0]);
+		int lines = 0;
+		twoLines.Clear ();
 
 		for(int i = 0; i < words.Length; i++)
 		{
@@ -128,7 +125,7 @@ public class dBoxScript : MonoBehaviour
 			if(i == 0)
 			{
 				result = words[0];
-				dialog.text = result;
+				lines = 1;
 			}
 			if(i > 0)
 			{
@@ -140,21 +137,65 @@ public class dBoxScript : MonoBehaviour
 				else
 				{
 					charCount = 0;
-					result += "\n " + word;
+					twoLines.Add (result);
+					result = word;
 				}
 			}
 		}
-		//if (result [0] != " ") 
-		//{
-		//	result = " " + result;
-		//}
-		dialog.text = result;
-		//dialog.text = input;
+		if (result != "") 
+		{
+			twoLines.Add (result);
+		}
+		Debug.Log (twoLines.Count + " - twoLines.Count at the end of writeDialog()");
+	}
+
+	public bool applyText()
+	{
+		if (lineIndex + 1 <= twoLines.Count) 
+		{
+			if (twoLines.Count - lineIndex == 1) 
+			{
+				dialog.text = (string) twoLines [twoLines.Count - 1];
+				visible = true;
+				twoLines.Clear ();
+				lineIndex++;
+				player.enabled = false;
+				return false;
+			}
+			dialog.text = twoLines [lineIndex] + "\n" + twoLines [lineIndex + 1];
+			player.enabled = false;
+			Debug.Log("Applied two lines: \n" + twoLines [lineIndex] + "\n" + twoLines [lineIndex + 1]);
+			lineIndex += 2; //CHANGE THIS LINE TO CHANGE NUMBER OF LINES THAT SCROLL WHEN SPACE IS PRESSED
+			visible = true;
+			return false;
+		} 
+		else 
+		{
+			visible = false;
+			player.enabled = true;
+			Debug.Log("Not applying lines. lineIndex = " + lineIndex + " - twoLines.Count = " + twoLines.Count);
+			twoLines.Clear ();
+			lineIndex = 0;
+			updateIndex (subject, 1);
+			return true;
+		}
 	}
 
 	void updateIndex(string subject, int modifier)
 	{
-		return;
+		XmlDocument doc = new XmlDocument ();
+		subject = "testHouseBook";
+		doc.Load ("Assets/scripts/dialog/" + subject + ".xml");
+		numberMessages = doc.SelectNodes (subject + "/location/location").Count;
+		string temp = doc.SelectSingleNode(subject + "/location/location").Attributes["index"].InnerText;
+		int indexValue = int.Parse (temp);
+		indexValue++;
+		if (indexValue > numberMessages) 
+		{
+			return;
+		}
+		doc.SelectSingleNode (subject + "/location/location").Attributes ["index"].InnerText = indexValue.ToString();
+		doc.Save ("Assets/scripts/dialog/" + subject + ".xml");
+		Debug.Log (indexValue + " - current index value in XML");
 	}
-
 }
