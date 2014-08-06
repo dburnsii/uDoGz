@@ -17,6 +17,8 @@ public class brockScript : MonoBehaviour {
 	private downColliderBox downColl;
 	public bool upObstacle;
 	public bool downObstacle;
+	public string upCollBoxName;
+	public string downCollBoxName;
 	
 	// Use this for initialization
 	void Start () 
@@ -25,8 +27,23 @@ public class brockScript : MonoBehaviour {
 		upObstacle = false;
 		downObstacle = false;
 		spriteRenderer = renderer as SpriteRenderer;
-		upColl = (upColliderBox) FindObjectOfType (typeof(upColliderBox));
-		downColl = (downColliderBox)FindObjectOfType (typeof(downColliderBox));
+		upColliderBox[] upBoxes = (upColliderBox[]) FindObjectsOfType (typeof(upColliderBox));
+		foreach (upColliderBox box in upBoxes) 
+		{
+			if(box.name == upCollBoxName)
+			{
+				upColl = box;
+			}
+		}
+		downColliderBox[] downBoxes = (downColliderBox[]) FindObjectsOfType (typeof(downColliderBox));
+		foreach (downColliderBox box in downBoxes) 
+		{
+			if(box.name == downCollBoxName)
+			{
+				downColl = box;
+			}
+		}
+		//downColl = (downColliderBox)FindObjectOfType (typeof(downColliderBox));
 		dir = 0;
 	}
 	
@@ -101,5 +118,5 @@ public class brockScript : MonoBehaviour {
 	void OnCollisionEnter(Collision coll)
 	{
 
-		}
+	}
 }

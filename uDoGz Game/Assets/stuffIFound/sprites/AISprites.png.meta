@@ -1,0 +1,2036 @@
+fileFormatVersion: 2
+guid: 145469d7a54d1f846a84d8116ff9043d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: AISprites
+    21300002: meUpR
+    21300004: meUpN
+    21300006: meUpL
+    21300008: AISprites_3
+    21300010: AISprites_4
+    21300012: AISprites_5
+    21300014: banditUpR
+    21300016: banditUpN
+    21300018: banditUpL
+    21300020: AISprites_9
+    21300022: AISprites_10
+    21300024: AISprites_11
+    21300026: jesusUpR
+    21300028: jesusUpN
+    21300030: jesusUpL
+    21300032: johnUpR
+    21300034: johnUpN
+    21300036: johnUpL
+    21300038: AISprites_18
+    21300040: AISprites_19
+    21300042: AISprites_20
+    21300044: AISprites_21
+    21300046: AISprites_22
+    21300048: AISprites_23
+    21300050: AISprites_24
+    21300052: AISprites_25
+    21300054: AISprites_26
+    21300056: meRightL
+    21300058: meRightN
+    21300060: meRightR
+    21300062: AISprites_30
+    21300064: AISprites_31
+    21300066: AISprites_32
+    21300068: banditRightR
+    21300070: banditRightN
+    21300072: banditRightL
+    21300074: AISprites_36
+    21300076: AISprites_37
+    21300078: AISprites_38
+    21300080: jesusRightR
+    21300082: jesusRightN
+    21300084: jesusRightL
+    21300086: johnRightR
+    21300088: johnRightN
+    21300090: johnRightL
+    21300092: AISprites_45
+    21300094: AISprites_46
+    21300096: AISprites_47
+    21300098: AISprites_48
+    21300100: AISprites_49
+    21300102: AISprites_50
+    21300104: AISprites_51
+    21300106: AISprites_52
+    21300108: AISprites_53
+    21300110: meDownL
+    21300112: meDownN
+    21300114: meDownR
+    21300116: AISprites_57
+    21300118: AISprites_58
+    21300120: AISprites_59
+    21300122: banditDownR
+    21300124: banditDownN
+    21300126: banditDownL
+    21300128: AISprites_63
+    21300130: AISprites_64
+    21300132: AISprites_65
+    21300134: jesusDownL
+    21300136: jesusDownN
+    21300138: jesusDownR
+    21300140: johnDownL
+    21300142: johnDownN
+    21300144: johnDownR
+    21300146: AISprites_72
+    21300148: AISprites_73
+    21300150: AISprites_74
+    21300152: AISprites_75
+    21300154: AISprites_76
+    21300156: AISprites_77
+    21300158: AISprites_78
+    21300160: AISprites_79
+    21300162: AISprites_80
+    21300164: meLeftL
+    21300166: meLeftN
+    21300168: meLeftR
+    21300170: AISprites_84
+    21300172: AISprites_85
+    21300174: AISprites_86
+    21300176: banditLeftR
+    21300178: banditLeftN
+    21300180: banditLeftL
+    21300182: AISprites_90
+    21300184: AISprites_91
+    21300186: AISprites_92
+    21300188: jesusLeftR
+    21300190: jesusLeftN
+    21300192: jesusLeftL
+    21300194: johnLeftL
+    21300196: johnLeftN
+    21300198: johnLeftN
+    21300200: AISprites_99
+    21300202: AISprites_100
+    21300204: AISprites_101
+    21300206: AISprites_102
+    21300208: AISprites_103
+    21300210: AISprites_104
+    21300212: AISprites_105
+    21300214: AISprites_106
+    21300216: AISprites_107
+    21300218: AISprites_108
+    21300220: AISprites_109
+    21300222: AISprites_110
+    21300224: AISprites_111
+    21300226: aaronUpR
+    21300228: aaronUpN
+    21300230: aaronUpL
+    21300232: AISprites_115
+    21300234: AISprites_116
+    21300236: AISprites_117
+    21300238: shawnUpR
+    21300240: shawnUpN
+    21300242: shawnUpL
+    21300244: AISprites_121
+    21300246: AISprites_122
+    21300248: AISprites_123
+    21300250: AISprites_124
+    21300252: AISprites_125
+    21300254: AISprites_126
+    21300256: AISprites_127
+    21300258: AISprites_128
+    21300260: AISprites_129
+    21300262: AISprites_130
+    21300264: AISprites_131
+    21300266: AISprites_132
+    21300268: AISprites_133
+    21300270: AISprites_134
+    21300272: AISprites_135
+    21300274: AISprites_136
+    21300276: AISprites_137
+    21300278: AISprites_138
+    21300280: AISprites_139
+    21300282: AISprites_140
+    21300284: AISprites_141
+    21300286: AISprites_142
+    21300288: AISprites_143
+    21300290: AISprites_144
+    21300292: AISprites_145
+    21300294: AISprites_146
+    21300296: AISprites_147
+    21300298: AISprites_148
+    21300300: AISprites_149
+    21300302: AISprites_150
+    21300304: AISprites_151
+    21300306: AISprites_152
+    21300308: AISprites_153
+    21300310: AISprites_154
+    21300312: AISprites_155
+    21300314: AISprites_156
+    21300316: AISprites_157
+    21300318: aaronRightR
+    21300320: aaronRightN
+    21300322: aaronRightL
+    21300324: AISprites_161
+    21300326: AISprites_162
+    21300328: AISprites_163
+    21300330: shawnRightR
+    21300332: shawnRightN
+    21300334: shawnRightL
+    21300336: AISprites_167
+    21300338: AISprites_168
+    21300340: AISprites_169
+    21300342: AISprites_170
+    21300344: AISprites_171
+    21300346: AISprites_172
+    21300348: AISprites_173
+    21300350: aaronDownL
+    21300352: aaronDownN
+    21300354: aaronDownR
+    21300356: AISprites_177
+    21300358: AISprites_178
+    21300360: AISprites_179
+    21300362: shawnDownL
+    21300364: shawnDownN
+    21300366: shawnDownR
+    21300368: AISprites_183
+    21300370: AISprites_184
+    21300372: AISprites_185
+    21300374: AISprites_186
+    21300376: AISprites_187
+    21300378: AISprites_188
+    21300380: AISprites_189
+    21300382: AISprites_190
+    21300384: AISprites_191
+    21300386: AISprites_192
+    21300388: AISprites_193
+    21300390: AISprites_194
+    21300392: AISprites_195
+    21300394: AISprites_196
+    21300396: AISprites_197
+    21300398: AISprites_198
+    21300400: AISprites_199
+    21300402: AISprites_200
+    21300404: AISprites_201
+    21300406: AISprites_202
+    21300408: aaronLeftN
+    21300410: AISprites_204
+    21300412: shawnLeftN
+    21300414: AISprites_206
+    21300416: AISprites_207
+    21300418: AISprites_208
+    21300420: AISprites_209
+    21300422: AISprites_210
+    21300424: AISprites_211
+    21300426: AISprites_212
+    21300428: AISprites_213
+    21300430: AISprites_214
+    21300432: AISprites_215
+    21300434: AISprites_216
+    21300436: AISprites_217
+    21300438: AISprites_218
+    21300440: AISprites_219
+    21300442: AISprites_220
+    21300444: AISprites_221
+    21300446: AISprites_222
+    21300448: aaronLeftR
+    21300450: aaronLeftL
+    21300452: AISprites_225
+    21300454: AISprites_226
+    21300456: shawnLeftR
+    21300458: shawnLeftL
+    21300460: AISprites_229
+    21300462: AISprites_230
+    21300464: AISprites_231
+    21300466: AISprites_232
+    21300468: AISprites_233
+    21300470: AISprites_234
+    21300472: AISprites_235
+    21300474: AISprites_236
+    21300476: AISprites_237
+    21300478: AISprites_238
+    21300480: AISprites_239
+    21300482: AISprites_240
+    21300484: AISprites_241
+    21300486: AISprites_242
+    21300488: AISprites_243
+    21300490: AISprites_244
+    21300492: AISprites_245
+    21300494: AISprites_246
+    21300496: AISprites_247
+    21300498: AISprites_248
+    21300500: AISprites_249
+    21300502: AISprites_250
+    21300504: AISprites_251
+    21300506: AISprites_252
+    21300508: jeremiahUpR
+    21300510: jeremiahUpN
+    21300512: jeremiahUpL
+    21300514: AISprites_256
+    21300516: AISprites_257
+    21300518: AISprites_258
+    21300520: AISprites_259
+    21300522: AISprites_260
+    21300524: AISprites_261
+    21300526: AISprites_262
+    21300528: AISprites_263
+    21300530: AISprites_264
+    21300532: AISprites_265
+    21300534: AISprites_266
+    21300536: AISprites_267
+    21300538: AISprites_268
+    21300540: AISprites_269
+    21300542: AISprites_270
+    21300544: AISprites_271
+    21300546: AISprites_272
+    21300548: AISprites_273
+    21300550: AISprites_274
+    21300552: AISprites_275
+    21300554: AISprites_276
+    21300556: AISprites_277
+    21300558: AISprites_278
+    21300560: jeremiahRightR
+    21300562: jeremiahRightN
+    21300564: jeremiahRightL
+    21300566: AISprites_282
+    21300568: AISprites_283
+    21300570: AISprites_284
+    21300572: AISprites_285
+    21300574: AISprites_286
+    21300576: AISprites_287
+    21300578: AISprites_288
+    21300580: AISprites_289
+    21300582: AISprites_290
+    21300584: AISprites_291
+    21300586: AISprites_292
+    21300588: AISprites_293
+    21300590: AISprites_294
+    21300592: AISprites_295
+    21300594: AISprites_296
+    21300596: AISprites_297
+    21300598: AISprites_298
+    21300600: AISprites_299
+    21300602: AISprites_300
+    21300604: AISprites_301
+    21300606: AISprites_302
+    21300608: AISprites_303
+    21300610: AISprites_304
+    21300612: AISprites_305
+    21300614: AISprites_306
+    21300616: AISprites_307
+    21300618: AISprites_308
+    21300620: AISprites_309
+    21300622: AISprites_310
+    21300624: AISprites_311
+    21300626: jeremiahDownR
+    21300628: jeremiahDownN
+    21300630: jeremiahDownL
+    21300632: AISprites_315
+    21300634: AISprites_316
+    21300636: AISprites_317
+    21300638: AISprites_318
+    21300640: AISprites_319
+    21300642: AISprites_320
+    21300644: AISprites_321
+    21300646: AISprites_322
+    21300648: AISprites_323
+    21300650: AISprites_324
+    21300652: AISprites_325
+    21300654: AISprites_326
+    21300656: AISprites_327
+    21300658: AISprites_328
+    21300660: AISprites_329
+    21300662: AISprites_330
+    21300664: AISprites_331
+    21300666: AISprites_332
+    21300668: AISprites_333
+    21300670: AISprites_334
+    21300672: AISprites_335
+    21300674: jeremiahLeftR
+    21300676: jeremiahLeftN
+    21300678: jeremiahLeftL
+    21300680: AISprites_339
+    21300682: AISprites_340
+    21300684: AISprites_341
+    21300686: AISprites_342
+    21300688: AISprites_343
+    21300690: AISprites_344
+    21300692: AISprites_345
+    21300694: AISprites_346
+    21300696: AISprites_347
+    21300698: brianUpL
+    21300700: brianUpN
+    21300702: brianUpR
+    21300704: arnoldUpL
+    21300706: arnoldUpN
+    21300708: arnoldUpR
+    21300710: AISprites_354
+    21300712: AISprites_355
+    21300714: AISprites_356
+    21300716: AISprites_357
+    21300718: AISprites_358
+    21300720: AISprites_359
+    21300722: xavierUpR
+    21300724: xavierUpN
+    21300726: xavierUpL
+    21300728: adrianUpL
+    21300730: adrianUpN
+    21300732: adrianUpR
+    21300734: AISprites_366
+    21300736: AISprites_367
+    21300738: AISprites_368
+    21300740: AISprites_369
+    21300742: AISprites_370
+    21300744: AISprites_371
+    21300746: AISprites_372
+    21300748: AISprites_373
+    21300750: AISprites_374
+    21300752: brianRightR
+    21300754: brianUpN
+    21300756: brianUpL
+    21300758: arnoldRightL
+    21300760: arnoldRightN
+    21300762: arnoldRightR
+    21300764: AISprites_381
+    21300766: AISprites_382
+    21300768: AISprites_383
+    21300770: AISprites_384
+    21300772: AISprites_385
+    21300774: AISprites_386
+    21300776: xavierRightR
+    21300778: xavierRightN
+    21300780: xavierRightL
+    21300782: adrianRightL
+    21300784: adrianRightN
+    21300786: adrianRightR
+    21300788: AISprites_393
+    21300790: AISprites_394
+    21300792: AISprites_395
+    21300794: AISprites_396
+    21300796: AISprites_397
+    21300798: AISprites_398
+    21300800: AISprites_399
+    21300802: AISprites_400
+    21300804: AISprites_401
+    21300806: brianDownL
+    21300808: brianDownN
+    21300810: brianDownR
+    21300812: arnoldDownR
+    21300814: arnoldDownN
+    21300816: arnoldDownL
+    21300818: AISprites_408
+    21300820: AISprites_409
+    21300822: AISprites_410
+    21300824: AISprites_411
+    21300826: AISprites_412
+    21300828: AISprites_413
+    21300830: xavierDownR
+    21300832: xavierDownN
+    21300834: xavierDownL
+    21300836: adrianDownR
+    21300838: adrianDownN
+    21300840: adrianDownL
+    21300842: AISprites_420
+    21300844: AISprites_421
+    21300846: AISprites_422
+    21300848: AISprites_423
+    21300850: AISprites_424
+    21300852: AISprites_425
+    21300854: AISprites_426
+    21300856: AISprites_427
+    21300858: AISprites_428
+    21300860: brianLeftR
+    21300862: brianLeftN
+    21300864: brianLeftL
+    21300866: arnoldLeftN
+    21300868: xavierLeftR
+    21300870: xavierLeftN
+    21300872: xavierLeftL
+    21300874: adrianLeftL
+    21300876: adrianLeftN
+    21300878: adrianLeftR
+    21300880: AISprites_439
+    21300882: AISprites_440
+    21300884: AISprites_441
+    21300886: AISprites_442
+    21300888: AISprites_443
+    21300890: AISprites_444
+    21300892: AISprites_445
+    21300894: AISprites_446
+    21300896: AISprites_447
+    21300898: arnoldLeftL
+    21300900: arnoldLeftR
+    21300902: AISprites_450
+    21300904: AISprites_451
+    21300906: AISprites_452
+    21300908: AISprites_453
+    21300910: AISprites_454
+    21300912: AISprites_455
+    21300914: AISprites_456
+    21300916: AISprites_457
+    21300918: AISprites_458
+    21300920: AISprites_459
+    21300922: AISprites_460
+    21300924: AISprites_461
+    21300926: AISprites_462
+    21300928: AISprites_463
+    21300930: AISprites_464
+    21300932: AISprites_465
+    21300934: AISprites_466
+    21300936: AISprites_467
+    21300938: AISprites_468
+    21300940: AISprites_469
+    21300942: AISprites_470
+    21300944: AISprites_471
+    21300946: AISprites_472
+    21300948: AISprites_473
+    21300950: AISprites_474
+    21300952: AISprites_475
+    21300954: AISprites_476
+    21300956: AISprites_477
+    21300958: AISprites_478
+    21300960: AISprites_479
+    21300962: AISprites_480
+    21300964: AISprites_481
+    21300966: AISprites_482
+    21300968: AISprites_483
+    21300970: AISprites_484
+    21300972: AISprites_485
+    21300974: AISprites_486
+    21300976: AISprites_487
+    21300978: AISprites_488
+    21300980: AISprites_489
+    21300982: AISprites_490
+    21300984: AISprites_491
+    21300986: AISprites_492
+    21300988: AISprites_493
+    21300990: AISprites_494
+    21300992: AISprites_495
+    21300994: AISprites_496
+    21300996: AISprites_497
+    21300998: AISprites_498
+    21301000: AISprites_499
+    21301002: AISprites_500
+    21301004: AISprites_501
+    21301006: AISprites_502
+    21301008: AISprites_503
+    21301010: AISprites_504
+    21301012: AISprites_505
+    21301014: AISprites_506
+    21301016: AISprites_507
+    21301018: AISprites_508
+    21301020: AISprites_509
+    21301022: AISprites_510
+    21301024: AISprites_511
+    21301026: AISprites_512
+    21301028: AISprites_513
+    21301030: AISprites_514
+    21301032: AISprites_515
+    21301034: AISprites_516
+    21301036: AISprites_517
+    21301038: AISprites_518
+    21301040: AISprites_519
+    21301042: AISprites_520
+    21301044: AISprites_521
+    21301046: AISprites_522
+    21301048: AISprites_523
+    21301050: AISprites_524
+    21301052: AISprites_525
+    21301054: AISprites_526
+    21301056: AISprites_527
+    21301058: AISprites_528
+    21301060: AISprites_529
+    21301062: AISprites_530
+    21301064: AISprites_531
+    21301066: AISprites_532
+    21301068: AISprites_533
+    21301070: AISprites_534
+    21301072: AISprites_535
+    21301074: AISprites_536
+    21301076: AISprites_537
+    21301078: AISprites_538
+    21301080: AISprites_539
+    21301082: AISprites_540
+    21301084: AISprites_541
+    21301086: AISprites_542
+    21301088: AISprites_543
+    21301090: AISprites_544
+    21301092: AISprites_545
+    21301094: AISprites_546
+    21301096: AISprites_547
+    21301098: AISprites_548
+    21301100: AISprites_549
+    21301102: AISprites_550
+    21301104: AISprites_551
+    21301106: AISprites_552
+    21301108: AISprites_553
+    21301110: AISprites_554
+    21301112: AISprites_555
+    21301114: AISprites_556
+    21301116: AISprites_557
+    21301118: AISprites_558
+    21301120: AISprites_559
+    21301122: AISprites_560
+    21301124: nurseD
+    21301126: AISprites_562
+    21301128: AISprites_563
+    21301130: AISprites_564
+    21301132: AISprites_565
+    21301134: AISprites_566
+    21301136: AISprites_567
+    21301138: AISprites_568
+    21301140: AISprites_569
+    21301142: AISprites_570
+    21301144: AISprites_571
+    21301146: AISprites_572
+    21301148: AISprites_573
+    21301150: AISprites_574
+    21301152: AISprites_575
+    21301154: AISprites_576
+    21301156: AISprites_577
+    21301158: AISprites_578
+    21301160: AISprites_579
+    21301162: AISprites_580
+    21301164: AISprites_581
+    21301166: AISprites_582
+    21301168: AISprites_583
+    21301170: AISprites_584
+    21301172: AISprites_585
+    21301174: AISprites_586
+    21301176: nurseL
+    21301178: AISprites_588
+    21301180: AISprites_589
+    21301182: AISprites_590
+    21301184: AISprites_591
+    21301186: AISprites_592
+    21301188: AISprites_593
+    21301190: AISprites_594
+    21301192: AISprites_595
+    21301194: AISprites_596
+    21301196: AISprites_597
+    21301198: AISprites_598
+    21301200: AISprites_599
+    21301202: AISprites_600
+    21301204: nurseR
+    21301206: AISprites_602
+    21301208: AISprites_603
+    21301210: AISprites_604
+    21301212: AISprites_605
+    21301214: AISprites_606
+    21301216: AISprites_607
+    21301218: AISprites_608
+    21301220: AISprites_609
+    21301222: AISprites_610
+    21301224: AISprites_611
+    21301226: AISprites_612
+    21301228: AISprites_613
+    21301230: AISprites_614
+    21301232: AISprites_615
+    21301234: AISprites_616
+    21301236: AISprites_617
+    21301238: AISprites_618
+    21301240: AISprites_619
+    21301242: AISprites_620
+    21301244: AISprites_621
+    21301246: AISprites_622
+    21301248: AISprites_623
+    21301250: AISprites_624
+    21301252: nurseU
+    21301254: AISprites_626
+    21301256: AISprites_627
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 16
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: meUpR
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 713
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meUpN
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 714
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meUpL
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 713
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: banditUpR
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 715
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: banditUpN
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 716
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: banditUpL
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 715
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jesusUpR
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 715
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jesusUpN
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 716
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jesusUpL
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 715
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: johnUpR
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 714
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: johnUpN
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 715
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: johnUpL
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 714
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meRightL
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 682
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meRightN
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 682
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meRightR
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 682
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: banditRightR
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 684
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: banditRightN
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 684
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: banditRightL
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 684
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jesusRightR
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 684
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jesusRightN
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 684
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jesusRightL
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 684
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: johnRightR
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 682
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: johnRightN
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 683
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: johnRightL
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 682
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meDownL
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 649
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meDownN
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 650
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meDownR
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 649
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: banditDownR
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 651
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: banditDownN
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 652
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: banditDownL
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 651
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jesusDownL
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 651
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jesusDownN
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 652
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jesusDownR
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 651
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: johnDownL
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 650
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: johnDownN
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 651
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: johnDownR
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 650
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meLeftL
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 618
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meLeftN
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 618
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meLeftR
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 618
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: banditLeftR
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 620
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: banditLeftN
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 620
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: banditLeftL
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 620
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jesusLeftR
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 620
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jesusLeftN
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 620
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jesusLeftL
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 620
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: johnLeftL
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 618
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: johnLeftN
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 619
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: johnLeftN
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 618
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: aaronUpR
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 581
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: aaronUpN
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 582
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: aaronUpL
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 581
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shawnUpR
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 580
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shawnUpN
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 581
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shawnUpL
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 580
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: aaronRightR
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 550
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: aaronRightN
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 550
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: aaronRightL
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 550
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shawnRightR
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 549
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shawnRightN
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 549
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shawnRightL
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 549
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: aaronDownL
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 517
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: aaronDownN
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 518
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: aaronDownR
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 517
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shawnDownL
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 516
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shawnDownN
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 517
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shawnDownR
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 516
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: aaronLeftN
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 486
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shawnLeftN
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 485
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: aaronLeftR
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 486
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: aaronLeftL
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 486
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shawnLeftR
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 485
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shawnLeftL
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 485
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jeremiahUpR
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 459
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jeremiahUpN
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 460
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jeremiahUpL
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 459
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jeremiahRightR
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 427
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jeremiahRightN
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 428
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jeremiahRightL
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 427
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jeremiahDownR
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 395
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jeremiahDownN
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 396
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jeremiahDownL
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 395
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jeremiahLeftR
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 363
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jeremiahLeftN
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 364
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jeremiahLeftL
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 363
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brianUpL
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 327
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brianUpN
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 328
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brianUpR
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 327
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arnoldUpL
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 327
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arnoldUpN
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 328
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arnoldUpR
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 327
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: xavierUpR
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 328
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: xavierUpN
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 329
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: xavierUpL
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 328
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: adrianUpL
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 329
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: adrianUpN
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 330
+        width: 14
+        height: 20
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: adrianUpR
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 329
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brianRightR
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 296
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brianUpN
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 296
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brianUpL
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 296
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arnoldRightL
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 296
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arnoldRightN
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 296
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arnoldRightR
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 296
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: xavierRightR
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 297
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: xavierRightN
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 297
+        width: 13
+        height: 20
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: xavierRightL
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 297
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: adrianRightL
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 298
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: adrianRightN
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 298
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: adrianRightR
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 298
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brianDownL
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 263
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brianDownN
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 264
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brianDownR
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 263
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arnoldDownR
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 263
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arnoldDownN
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 264
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arnoldDownL
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 263
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: xavierDownR
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 264
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: xavierDownN
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 265
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: xavierDownL
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 264
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: adrianDownR
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 265
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: adrianDownN
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 266
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: adrianDownL
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 265
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brianLeftR
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 232
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brianLeftN
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 232
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brianLeftL
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 232
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arnoldLeftN
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 232
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: xavierLeftR
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 233
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: xavierLeftN
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 233
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: xavierLeftL
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 233
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: adrianLeftL
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 234
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: adrianLeftN
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 234
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: adrianLeftR
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 234
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arnoldLeftL
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 232
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arnoldLeftR
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 232
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nurseD
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 87
+        width: 14
+        height: 20
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nurseL
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 62
+        width: 13
+        height: 20
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nurseR
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 37
+        width: 13
+        height: 20
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nurseU
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 12
+        width: 14
+        height: 20
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

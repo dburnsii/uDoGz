@@ -13,7 +13,7 @@ public class dBoxScript : MonoBehaviour
 	private playerMovementScript player;
 	public float ratio;
 	private Renderer spriteRenderer;
-	public string name;
+	public string dName;
 	private TextMesh dialog;
 	private int index;
 	public string subject;
@@ -34,7 +34,7 @@ public class dBoxScript : MonoBehaviour
 		ratio = gameCamera.aspect;
 		middleWidth = (float) ((4*ratio)-0.5);
 		player = ( playerMovementScript )FindObjectOfType ( typeof( playerMovementScript ) );
-		section = GameObject.Find (name);
+		section = GameObject.Find (dName);
 		TextMesh[] temp;
 		temp = (TextMesh[])FindObjectsOfType (typeof(TextMesh));
 		for (int i = 0; i < temp.Length; i++) 

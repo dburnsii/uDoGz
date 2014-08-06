@@ -1,12 +1,13 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using System.Collections;
 
 public class playerMovementScript : MonoBehaviour
 {
 
-	private Vector3 dest;
-	private Vector3 start;
-	private Vector3 target;
+	public Vector3 dest;
+	public Vector3 start;
+	public Vector3 target;
 	public float speed;
 	private SpriteRenderer spriteRenderer;
 	public Sprite[] sprites;
@@ -34,10 +35,10 @@ public class playerMovementScript : MonoBehaviour
 	public bool rightBoxBool;
 	private bool stopStatus;
 	private char collisionDirection;
-	private bool uObstacle;
-	private bool dObstacle;
-	private bool lObstacle;
-	private bool rObstacle;
+	public bool uObstacle;
+	public bool dObstacle;
+	public bool lObstacle;
+	public bool rObstacle;
 	public bool enabled;
 	private dBoxScript dialogBox;
 	private int textLine;
@@ -48,6 +49,8 @@ public class playerMovementScript : MonoBehaviour
 	public char activeDirection;
 	private char lastActiveDirection;
 	private bool aButtonActive;
+	public float xloc;
+	public float yloc;
 
 	void Start ()
 	{
@@ -67,6 +70,20 @@ public class playerMovementScript : MonoBehaviour
 		rightCollBox = ( rightPlayerColliderBox )FindObjectOfType ( typeof( rightPlayerColliderBox ) );
 		dialogBox = (dBoxScript)FindObjectOfType (typeof(dBoxScript));
 		timeSinceUpdate = Time.time;
+		if (Application.loadedLevelName == "IntroPokemon") //CHANGE: Should be name of outer world
+		{
+			start = new Vector3 (PlayerPrefs.GetFloat ("tempX"), PlayerPrefs.GetFloat ("tempY"), 0);
+			transform.position = new Vector3 (PlayerPrefs.GetFloat ("tempX"), PlayerPrefs.GetFloat ("tempY"), 0);
+			Debug.Log ("Moving to last saved position");
+		} 
+		else 
+		{
+			buildingCoordDB coords = new buildingCoordDB();
+			transform.position = coords.getInsideCoords(Application.loadedLevelName);
+			xloc = coords.getOutsideCoords(Application.loadedLevelName).x;
+			yloc = coords.getOutsideCoords(Application.loadedLevelName).y;
+			spriteRenderer.sprite = sprites[0];
+		}
 	}
 
 	void Update ()
@@ -94,15 +111,46 @@ public class playerMovementScript : MonoBehaviour
 				{
 					//enterBuilding();
 				}
-				if ( dir == 'u' && !upBoxBool )
+				if ( dir == 'u' )
 				{
-					moveUp ();
-					return;
+
+					if(!upBoxBool)
+					{
+						moveUp ();
+						return;
+					}
+					else if(upDoorBool)
+					{
+
+						PlayerPrefs.SetFloat("tempX" , xloc) ;
+						PlayerPrefs.SetFloat ("tempY", yloc);
+						Debug.Log("Loading new level");
+						Application.LoadLevel(upCollBox.building);
+					}
+
 				}
-				if ( dir == 'd' && !downBoxBool )
+				if ( dir == 'd')
 				{
-					moveDown ();
-					return;
+					if(!downBoxBool)
+					{
+						moveDown ();
+						return;
+					}
+					else if(downDoorBool)
+					{
+						if(Application.loadedLevelName != "IntroPokemon")
+						{
+							PlayerPrefs.SetFloat("tempX" , xloc);
+							PlayerPrefs.SetFloat ("tempY", yloc);
+							Debug.Log("Loading new level");
+							Application.LoadLevel("IntroPokemon");
+						}
+					}
+					else
+					{
+						spriteRenderer.sprite = sprites[4];
+						//done = true;
+					}
 				}
 				if ( dir == 'l' && !leftBoxBool )
 				{
@@ -119,6 +167,7 @@ public class playerMovementScript : MonoBehaviour
 			{
 				if(dir == 'u' && upCollBox.talk && Time.time - timeSinceUpdate > 0.5)
 				{
+					Debug.Log (upCollBox.building);
 					dialogBox.gatherDialog(upCollBox.building);
 					dialogBox.applyText();
 					timeSinceUpdate = Time.time;
@@ -151,6 +200,16 @@ public class playerMovementScript : MonoBehaviour
 				{
 					moveDown ();
 					return;
+				}
+				else if (downDoorBool)
+				{
+					if(Application.loadedLevelName != "IntroPokemon")
+					{
+						PlayerPrefs.SetFloat("tempX" , xloc);
+						PlayerPrefs.SetFloat ("tempY", yloc);
+						Debug.Log("Loading new level");
+						Application.LoadLevel("IntroPokemon");
+					}
 				}
 				else
 				{
@@ -425,7 +484,7 @@ public class playerMovementScript : MonoBehaviour
 
 	void OnTriggerEnter2D ( Collider2D coll )
 	{
-		if ( coll.gameObject.tag == "Building" )
+		if ( coll.gameObject.tag == "Building" || coll.gameObject.tag == "Talkable" || coll.gameObject.tag == "Friendly")
 		{
 			stopChar ();
 		}
@@ -523,24 +582,6 @@ public class playerMovementScript : MonoBehaviour
 				} else {
 						transform.position = start;
 						target = start;
-
-						if (dir == 'u') {
-								transform.position = start;
-								target = start;
-						}
-						if (dir == 'd') {
-								transform.position = start;
-								target = start;
-						}
-						if (dir == 'l') {
-								transform.position = start;
-								target = start;
-						}
-						if (dir == 'r') {
-								transform.position = start;
-								target = start;
-						}
-
 						lastMoveTime = Time.time;
 				}
 		}
@@ -599,5 +640,11 @@ public class playerMovementScript : MonoBehaviour
 		Debug.Log ("Looks like you just pressed the A button");
 		aButtonActive = true;
 		activeDirection = 'n';
+	}
+
+	void OnApplicationQuit()
+	{
+		PlayerPrefs.DeleteKey ("tempX");
+		PlayerPrefs.DeleteKey ("tempY");
 	}
 }

@@ -46,8 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\scripts\dialog\NewBehaviourScript.js" />
+     <Compile Include="Assets\scripts\movement\NewBehaviourScript.js" />
      <None Include="Assets\scripts\dialog\testHouseBook.txt" />
+     <None Include="Assets\CNJoystick\OnScreenControls\Initial Pack\Sprites\flatDark\flatDark.xml" />
+     <None Include="Assets\scripts\dialog\testHouseBook.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -23,6 +23,6 @@ public class pauseScript : MonoBehaviour {
 	{
 		if (GUI.Button (new Rect (Camera.main.pixelWidth / 2 - 40, 10, 80, 30), "", style))
 				if (pauseButtonPressed != null)
-						;
+						pauseButtonPressed();
 	}
 }

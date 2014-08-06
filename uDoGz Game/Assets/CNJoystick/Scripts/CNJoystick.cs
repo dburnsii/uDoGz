@@ -107,6 +107,7 @@ public class CNJoystick : MonoBehaviour
     void Update()
     {
         // Automatically call proper input handler
+	//InitialCalculations ();
         CurrentInputHandler();
     }
 
